@@ -60,7 +60,7 @@
 
 ## 문의사항
 - 사전과제를 진행하며 궁금한 점은 아래의 오픈 채팅방을 통해서 문의해주시기 바랍니다.
-https://open.kakao.com/o/sDBDUcZb
+> https://open.kakao.com/o/sDBDUcZb
 
 
 
