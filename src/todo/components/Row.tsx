@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const Row = styled.div`
   box-sizing: border-box;
 
-  width: 50rem;
+  width: 100%;
   min-height: 5rem;
   font-size: 2rem;
   color: #989898;

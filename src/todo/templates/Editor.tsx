@@ -57,10 +57,8 @@ const Editor = ({ todoIndex, todo }: EditorProps) => {
           <Content showStrike={todo.isDone} onClick={handleClickContent}>
             {todo.content}
           </Content>
-          <Controls>
-            <EditButton onClick={handleClickEdit}>수정</EditButton>
-            <DeleteButton onClick={handleClickDelete}>삭제</DeleteButton>
-          </Controls>
+          <EditButton onClick={handleClickEdit}>수정</EditButton>
+          <DeleteButton onClick={handleClickDelete}>삭제</DeleteButton>
         </>
       )}
     </Container>
@@ -73,7 +71,7 @@ const Container = styled(Row)`
   flex-direction: row;
   align-items: center;
 
-  height: 6rem;
+  height: 8rem;
   padding: 1rem 2rem;
 
   &:hover {
@@ -88,6 +86,7 @@ interface ContentProps {
 const Content = styled.button<ContentProps>`
   ${resetClickable}
 
+  overflow-x: auto;
   text-align: left;
 
   width: 100%;
@@ -111,12 +110,10 @@ const Input = styled.input`
   outline: 0;
 `;
 
-const Controls = styled.div`
-  margin-left: auto;
-`;
-
 const Button = styled.button`
   ${resetClickable}
+
+  white-space: nowrap;
 
   margin-left: 1rem;
 `;

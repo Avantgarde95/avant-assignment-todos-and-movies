@@ -42,7 +42,7 @@ const Content = styled.main`
   width: 100%;
   height: 100%;
   flex: 1;
-  padding-top: 6rem;
+  padding: 6rem 1rem 0 1rem;
 `;
 
 const Title = styled.div`

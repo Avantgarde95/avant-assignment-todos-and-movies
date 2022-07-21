@@ -23,7 +23,9 @@ const Table = () => {
 const Container = styled.div`
   ${shadowEffect}
 
-  margin-top: 2rem;
+  width: 50rem;
+  max-width: 100%;
+  margin: 2rem;
   background-color: #ffffff;
 `;
 

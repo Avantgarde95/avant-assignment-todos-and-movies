@@ -33,29 +33,31 @@ const Container = styled.header`
   justify-content: center;
 
   width: 100%;
-  padding: 2.5rem 0 2rem 0;
+  padding: 2.5rem 1rem 2rem 1rem;
 
   background-color: #ffffff;
 `;
 
 const Content = styled.div`
+  white-space: nowrap;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 
   ${inner}
 `;
 
 const Title = styled.h1`
+  width: 100%;
+  flex: 1;
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
   color: #696969;
 `;
 
-const Controls = styled.div`
-  margin-left: auto;
-`;
+const Controls = styled.div``;
 
 const Router = styled.a`
   ${resetClickable}
