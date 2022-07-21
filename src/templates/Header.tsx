@@ -8,7 +8,7 @@ const Header = () => (
     <Content>
       <Title>프로그라피 프론트 Avantgarde95</Title>
       <Controls>
-        <Button>Todo</Button>
+        <Button>투두리스트</Button>
         <Button>영화</Button>
       </Controls>
     </Content>

@@ -12,8 +12,16 @@ export const shadowEffect = css`
 export const resetClickable = css`
   cursor: pointer;
 
+  box-sizing: border-box;
   border: 0;
   background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+`;
+
+export const resetForm = css`
+  box-sizing: border-box;
+
   font-family: inherit;
   font-size: inherit;
 `;

@@ -1,14 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const Row = () => <Container>Hello</Container>;
-
-const Container = styled.div`
+const Row = styled.div`
   box-sizing: border-box;
 
   width: 50rem;
   min-height: 5rem;
-  padding: 2rem;
   font-size: 2rem;
   color: #989898;
 
