@@ -14,7 +14,7 @@ interface EditorProps {
 const Editor = ({ todoIndex, todo }: EditorProps) => {
   const setTodos = useSetRecoilState(todosState);
   const [isEditMode, setEditMode] = useState(false);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(todo.content);
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
     setInput(event.target.value);
