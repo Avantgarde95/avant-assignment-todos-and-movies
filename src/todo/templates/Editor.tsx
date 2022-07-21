@@ -73,7 +73,8 @@ const Container = styled(Row)`
   flex-direction: row;
   align-items: center;
 
-  padding: 0 2rem;
+  height: 6rem;
+  padding: 1rem 2rem;
 
   &:hover {
     background-color: #f8f8f8;
@@ -90,7 +91,7 @@ const Content = styled.button<ContentProps>`
   text-align: left;
 
   width: 100%;
-  height: 6rem;
+  height: 100%;
   padding: 0;
   flex: 1;
 
@@ -103,8 +104,11 @@ const Input = styled.input`
   text-align: left;
 
   width: 100%;
-  height: 6rem;
+  height: 100%;
   flex: 1;
+  padding: 0;
+  border: 0;
+  outline: 0;
 `;
 
 const Controls = styled.div`

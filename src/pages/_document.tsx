@@ -10,6 +10,7 @@ const Document = () => (
     </Head>
     <body>
       <Main />
+      <div className="modalContainer" />
       <NextScript />
     </body>
   </Html>

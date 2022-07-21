@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styled from "@emotion/styled";
 
 import { inner, resetClickable, shadowEffect } from "styles/Mixins";
@@ -8,8 +9,12 @@ const Header = () => (
     <Content>
       <Title>프로그라피 프론트 Avantgarde95</Title>
       <Controls>
-        <Button>투두리스트</Button>
-        <Button>영화</Button>
+        <Link href="/">
+          <Router>투두리스트</Router>
+        </Link>
+        <Link href="/movie">
+          <Router>영화</Router>
+        </Link>
       </Controls>
     </Content>
   </Container>
@@ -52,7 +57,7 @@ const Controls = styled.div`
   margin-left: auto;
 `;
 
-const Button = styled.button`
+const Router = styled.a`
   ${resetClickable}
 
   font-size: 1.5rem;
