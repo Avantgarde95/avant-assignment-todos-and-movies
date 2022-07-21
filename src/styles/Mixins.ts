@@ -11,6 +11,7 @@ export const shadowEffect = css`
 
 export const resetClickable = css`
   cursor: pointer;
+  text-decoration: none;
 
   box-sizing: border-box;
   border: 0;

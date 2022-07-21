@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import styled from "@emotion/styled";
 
+import Link from "components/Link";
 import { inner, resetClickable, shadowEffect } from "styles/Mixins";
 
 const Header = () => (
@@ -9,12 +9,15 @@ const Header = () => (
     <Content>
       <Title>프로그라피 프론트 Avantgarde95</Title>
       <Controls>
-        <Link href="/">
-          <Router>투두리스트</Router>
-        </Link>
-        <Link href="/movie">
-          <Router>영화</Router>
-        </Link>
+        <HeaderLink href="/">투두리스트</HeaderLink>
+        <HeaderLink href="/movie">영화</HeaderLink>
+        <HeaderLink
+          href="https://github.com/Avantgarde95/avant-todos-and-movies"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          코드
+        </HeaderLink>
       </Controls>
     </Content>
   </Container>
@@ -59,7 +62,7 @@ const Title = styled.h1`
 
 const Controls = styled.div``;
 
-const Router = styled.a`
+const HeaderLink = styled(Link)`
   ${resetClickable}
 
   font-size: 1.5rem;
