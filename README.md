@@ -12,21 +12,11 @@
   - Loading screen (Modal: React Portal, Loading state: React Query)
   - Show movies' data
 
-### Screenshots
+### Results
 
-On large screen
+![Result](Result.gif)
 
-![Screenshot1](Screenshot1.png)
-
-![Screenshot2](Screenshot2.png)
-
-![Screenshot3](Screenshot3.png)
-
-On small screen
-
-![Screenshot4](Screenshot4.png)
-
------
+---
 
 # 프로그라피 6기 React 사전과제
 
