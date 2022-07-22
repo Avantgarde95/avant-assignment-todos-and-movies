@@ -1,6 +1,18 @@
-# 프로그라피 6기 React 사전과제
+### What I did
 
-My implementation
+- Project setup
+- Implement whole UI
+- Todo list
+  - Add a task
+  - Mark done / not done
+  - Edit tasks
+  - Delete tasks
+- Movie list
+  - Download movies' data
+  - Loading screen (Modal: React Portal, Loading state: React Query)
+  - Show movies' data
+
+### Screenshots
 
 ![Screenshot1](Screenshot1.png)
 
@@ -10,7 +22,9 @@ My implementation
 
 ![Screenshot4](Screenshot4.png)
 
----
+-----
+
+# 프로그라피 6기 React 사전과제
 
 안녕하세요.
 프로그라피 6기에 관심을 가지고 지원해 주셔서 감사합니다.
