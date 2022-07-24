@@ -10,16 +10,16 @@ const Creator = () => {
   const [input, setInput] = useState("");
   const setTodos = useSetRecoilState(todosState);
 
-  function handleChange(event: ChangeEvent<HTMLInputElement>) {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInput(event.target.value);
-  }
+  };
 
-  function handleKeyUp(event: KeyboardEvent<HTMLInputElement>) {
+  const handleKeyUp = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       setTodos(prevTodos => [...prevTodos, { content: input, isDone: false }]);
       setInput("");
     }
-  }
+  };
 
   return (
     <Row>

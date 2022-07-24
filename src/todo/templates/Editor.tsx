@@ -16,11 +16,11 @@ const Editor = ({ todoIndex, todo }: EditorProps) => {
   const [isEditMode, setEditMode] = useState(false);
   const [input, setInput] = useState(todo.content);
 
-  function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInput(event.target.value);
-  }
+  };
 
-  function handleInputKeyUp(event: KeyboardEvent<HTMLInputElement>) {
+  const handleInputKeyUp = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       setTodos(prevTodos => [
         ...prevTodos.slice(0, todoIndex),
@@ -30,23 +30,23 @@ const Editor = ({ todoIndex, todo }: EditorProps) => {
 
       setEditMode(false);
     }
-  }
+  };
 
-  function handleClickContent() {
+  const handleClickContent = () => {
     setTodos(prevTodos => [
       ...prevTodos.slice(0, todoIndex),
       { ...todo, isDone: !todo.isDone },
       ...prevTodos.slice(todoIndex + 1),
     ]);
-  }
+  };
 
-  function handleClickEdit() {
+  const handleClickEdit = () => {
     setEditMode(true);
-  }
+  };
 
-  function handleClickDelete() {
+  const handleClickDelete = () => {
     setTodos(prevTodos => [...prevTodos.slice(0, todoIndex), ...prevTodos.slice(todoIndex + 1)]);
-  }
+  };
 
   return (
     <Container>
